@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="D:\2141016313\jquery-3.6.1.js"></script>
+		<style>
+			.c1{
+			overflow:auto;
+			border: 2px solid black;
+			height:500px;
+			width:500px;
+			border-radius:50%;
+			background-color:cyan;
+			}
+			.s1{
+			border: 2px solid black;
+			height:100px;
+			width:100px;
+			margin:10px;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$(".c1").hide(function(){	
+						$("#hide").text("Show");
+					});	
+				});
+			});
+			$(document).ready(function(){
+				$("#hide").dblclick(function(){
+					$(".c1").show(function(){
+						$("#hide").text("Hide");
+					});
+				});
+			});	
+		</script>
+	</head>
+		<body>
+			<div class="c1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra. Tristique senectus et netus et malesuada fames ac. Non consectetur a erat 				nam at lectus urna duis convallis. Porttitor massa id neque aliquam vestibulum. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Interdum velit laoreet id donec ultrices tincidunt. Ultricies lacus sed turpis tincidunt. Sed enim ut sem 				viverra aliquet. Turpis cursus in hac habitasse platea dictumst quisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Varius sit amet mattis vulputate enim nulla aliquet. Vitae congue eu consequat ac felis donec.</p>
+			</div>
+			<button id="hide">Hide</button>
+			<div class="c2">
+				<div class="s1" id="sh1"></div>
+				<div class="s1" id="sh2"></div>
+				<div class="s1" id="sh3"></div>
+			</div>
+		</body>
+	</head>
+</html>

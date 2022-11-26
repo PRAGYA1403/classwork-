@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery 4</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#left").click(function(){
+					$(".d").animate({left:'0px'});
+				});
+			});
+			$(document).ready(function(){
+  				$("#right").click(function(){
+   					 $(".d").animate({left: '250px'});
+  				});
+			});
+			$(document).ready(function(){
+				$("#top").click(function(){
+					$(".d").animate({top: '0px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#bot").click(function(){
+					$(".d").animate({top: '250px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#ani").click(function(){
+					$(".d").animate({top:'250px'},"slow");
+					$(".d").animate({left:'250px'},"slow");
+					$(".d").animate({opacity:'0.1'},"slow");
+					$(".d").animate({top:'0px'},"slow");
+					$(".d").animate({left:'0px'},"slow");
+					$(".d").animate({opacity:'1'},"slow");
+					$(".d").css('font-size', '50px');
+				});
+			});
+			$(document).ready(function(){
+				$("#fadein").click(function(){
+					$(".d2").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#fade").click(function(){
+					$(".d2").fadeIn("slow");
+				});
+			});
+		</script>
+		<style>
+			.d{
+			position:relative;
+			height:100px;
+			width:100px;
+			
+			background-color:cyan;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="d"></div>
+		<button id="right">Right</button>
+		<button id="left">Left</button>
+		<button id="top">Top</button>
+		<button id="bot">Bottom</button>
+		<button id="ani">Animate</button>
+		<div class="d2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmtitor l.</div>
+		<button id="fadein">Fade in</button>
+		<button id="fade">Fade out</button>
+	</body>	
+</html>
