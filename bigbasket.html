@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+></script>
+ <script>
+ $( document ).ready(function() {
+ $( "#searchbtn").click(function() {
+ alert("Search button is clicked. Value of Search Text is " + 
+$("#searchtxt").val() + "Category : " + $("#categorysel").children(":selected").
+html());
+ });
+ 
+ });
+ </script>
+ <title>MyEShop</title>
+ </head>
+ <body style="background-color:aqua;">
+ <h1 style="text-align:center;">Welcome to MyEShop</h1>
+ <p style="text-align:center;">Buy Any Product you Like at a Reasonable Price</p>
+ 
+ <table>
+ <tr>
+ <td><img src="C:\Users\hp\Desktop\online-shopping-logo_9850-370.webp" alt="myeshop logo"width="50px" 
+height="60px"></td>
+ <td><form> <input id="searchtxt" type="text" placeholder="Search..">
+</form></td>
+ <td>
+ <select id="categorysel">
+ <option>All</option>
+ <option>CLOTHES </option>
+ <option>FOOD AND BEVERAGES </option>
+ <option>HEALTH & BEAUTY </option>
+ <option>SPORTS & LEISURE </option>
+ <option>BOOKS & ENTERTAINMENTS </option> 
+ </select>
+ </td>
+ <td><button id="searchbtn">Search</button></td>
+ <td><span ><i> [ 0 ] Items in your cart </i> </span></td>
+ <td><a style="background-color: red;color: white;padding: 1em 1.5em;-
+text-decoration: none;text-transform: uppercase;" href="home.html">Home</a></td>
+ <td><a href="specialofferrs.html">Special Offers</a></td>
+ <td><a href="contact.html">Contact</a></td>
+ <td><a href="login.html">Login</a></td>
+ </tr>
+ </table>
+ 
+ </body>
+</html>
